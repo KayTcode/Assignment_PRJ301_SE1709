@@ -1,3 +1,11 @@
+<%-- 
+    Document   : login
+    Created on : Mar 15, 2023, 5:09:33 PM
+    Author     : anhth
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,11 +57,10 @@
                     <div class="right">
                         <label><a href="#">Forgot password?</a></label>
                     </div>
+                    <a href="#" style="text-decoration: none; color: #ffff">Do you have account?</a>
                 </div>
-                <span><a>Have an account?</a></span>
             </div>
         </div>
     </div>
 </body>
-
 </html>
