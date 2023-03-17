@@ -25,9 +25,9 @@
 <body>
     <div class="banner">
         <div class="navbar">
-            <a href="index.html"><img src="../images/logoKT.png" class="logo"></a>
+            <a href="../index.html"><img src="../images/logoKT.png" class="logo"></a>
             <ul class="nav">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -37,7 +37,8 @@
                 <div class="top-header">
                     <header>Login</header>
                 </div>
-                <div class="input-field">
+                <form action="login" method="post">
+                    <div class="input-field">
                     <input type="text" name="username" id="username" class="input" placeholder="Username" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
@@ -50,7 +51,7 @@
                 </div>
                 <div class="remember">
                     <div class="left">
-                        <input type="checkbox" id="check">
+                        <input type="checkbox" id="check" name="remember">
                         <label for="check">Remember Me</label>
                     </div>
                     <div class="right">
@@ -58,6 +59,7 @@
                     </div>
                     <a href="#" style="text-decoration: none; color: #ffff">Do you have account?</a>
                 </div>
+                </form>
             </div>
         </div>
     </div>

@@ -4,9 +4,17 @@
         <servlet-name>Login</servlet-name>
         <servlet-class>Controller.LoginController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>HomePage</servlet-name>
+        <servlet-class>Controller.HomepageController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/view/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HomePage</servlet-name>
+        <url-pattern>/view/home</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

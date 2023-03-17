@@ -40,6 +40,14 @@ public class User {
         this.role = role;
     }
 
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
     
 
     public int getUserID() {
