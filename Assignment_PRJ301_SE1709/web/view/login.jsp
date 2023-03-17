@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <title>KT Blog</title>
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stylelogin.css">
 </head>
 
 <body>
@@ -30,7 +30,6 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Support</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Statistic</a></li>
             </ul>
         </div>
         <div class="box" style="padding-top: 200px;">
