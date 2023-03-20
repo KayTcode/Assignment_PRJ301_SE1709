@@ -10,11 +10,12 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 /**
  *
  * @author anhth
  */
-public abstract class DBContext {
+public class DBContext {
     protected Connection connection;
     public DBContext()
     {

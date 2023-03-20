@@ -34,7 +34,7 @@
                     <li><a href="#support">Support</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
-                <a href="profile.html"><button type="button" class="but-user"><i class="fa-solid fa-user"></i></button></a>
+                <a href="profile.html"><button type="button" class="but-user"><i class="fa-solid fa-user"></i>${user.username}</button></a>
             </div>
             <!--Start Content-->
             <div class="content" id="content">

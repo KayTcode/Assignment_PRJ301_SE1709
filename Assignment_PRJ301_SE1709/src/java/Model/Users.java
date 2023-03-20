@@ -8,7 +8,7 @@ package Model;
  *
  * @author anhth
  */
-public class User {
+public class Users {
     private int userID;
     private String username;
     private String password;
@@ -22,10 +22,10 @@ public class User {
     private String nationalnumber;
     private Role role;
 
-    public User() {
+    public Users() {
     }
 
-    public User(int userID, String username, String password, String firstname, String lastname, String address, String nickname, boolean gender, String phonenumber, String email, String nationalnumber, Role role) {
+    public Users(int userID, String username, String password, String firstname, String lastname, String address, String nickname, boolean gender, String phonenumber, String email, String nationalnumber, Role role) {
         this.userID = userID;
         this.username = username;
         this.password = password;
@@ -38,6 +38,7 @@ public class User {
         this.email = email;
         this.nationalnumber = nationalnumber;
         this.role = role;
+        
     }
 
     public Role getRole() {

@@ -15,20 +15,39 @@ public class Post {
     private boolean status;
     private String image;
     private String description;
-    private User user;
-
+    private int liked;
+    private Comment comment;
+    
     public Post() {
     }
 
-    public Post(int postID, String title, String content, boolean status, String image, String description, User user) {
+    public Post(int postID, String title, String content, boolean status, String image, String description, int liked, Comment comment) {
         this.postID = postID;
         this.title = title;
         this.content = content;
         this.status = status;
         this.image = image;
         this.description = description;
-        this.user = user;
+        this.liked = liked;
+        this.comment=comment;
     }
+
+    public int getLiked() {
+        return liked;
+    }
+
+    public void setLiked(int liked) {
+        this.liked = liked;
+    }
+
+    public Comment getComment() {
+        return comment;
+    }
+
+    public void setComment(Comment comment) {
+        this.comment = comment;
+    }
+
 
     public int getPostID() {
         return postID;
@@ -76,16 +95,5 @@ public class Post {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-    
-    
-    
+    } 
 }
