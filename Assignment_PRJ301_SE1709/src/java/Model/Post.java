@@ -4,6 +4,8 @@
  */
 package Model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author anhth
@@ -16,12 +18,13 @@ public class Post {
     private String image;
     private String description;
     private int liked;
-    private Comment comment;
+    private Users user;
+    private ArrayList<Comment> comment;
     
     public Post() {
     }
 
-    public Post(int postID, String title, String content, boolean status, String image, String description, int liked, Comment comment) {
+    public Post(int postID, String title, String content, boolean status, String image, String description, int liked, Users user) {
         this.postID = postID;
         this.title = title;
         this.content = content;
@@ -29,8 +32,23 @@ public class Post {
         this.image = image;
         this.description = description;
         this.liked = liked;
-        this.comment=comment;
+        this.user = user;
     }
+
+    public Post(String desciption) {
+        this.description = description;
+    }
+     
+
+    public Users getUser() {
+        return user;
+    }
+
+    public void setUser(Users user) {
+        this.user = user;
+    }
+
+    
 
     public int getLiked() {
         return liked;
@@ -38,14 +56,6 @@ public class Post {
 
     public void setLiked(int liked) {
         this.liked = liked;
-    }
-
-    public Comment getComment() {
-        return comment;
-    }
-
-    public void setComment(Comment comment) {
-        this.comment = comment;
     }
 
 

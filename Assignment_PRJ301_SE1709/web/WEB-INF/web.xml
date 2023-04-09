@@ -8,17 +8,94 @@
         <servlet-name>HomeController</servlet-name>
         <servlet-class>Controller.HomeController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegisterController</servlet-name>
+        <servlet-class>Controller.RegisterController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminManagementController</servlet-name>
+        <servlet-class>Controller.AdminManagementController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>Controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewFeedController</servlet-name>
+        <servlet-class>Controller.NewFeedController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUserByAdmin</servlet-name>
+        <servlet-class>Controller.DeleteUserByAdmin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserManagement</servlet-name>
+        <servlet-class>Controller.UserManagement</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateProfile</servlet-name>
+        <servlet-class>Controller.UpdateProfile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PostDelete</servlet-name>
+        <servlet-class>Controller.PostDelete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PostEdit</servlet-name>
+        <servlet-class>Controller.PostEdit</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
-        <url-pattern>/view/login</url-pattern>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>HomeController</servlet-name>
-        <url-pattern>/view/home</url-pattern>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterController</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminManagementController</servlet-name>
+        <url-pattern>/adminmanage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewFeedController</servlet-name>
+        <url-pattern>/newfeed</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUserByAdmin</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserManagement</servlet-name>
+        <url-pattern>/usermanage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateProfile</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PostDelete</servlet-name>
+        <url-pattern>/postdelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PostEdit</servlet-name>
+        <url-pattern>/postedit</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>
+            home
+        </welcome-file>
+    </welcome-file-list>
 </web-app>

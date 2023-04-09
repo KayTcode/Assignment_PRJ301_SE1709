@@ -40,7 +40,7 @@ public class LoginController extends HttpServlet {
             out.println("<title>Servlet LoginController</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet LoginController at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet LoginController at " + request.getAttribute("message") + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -58,7 +58,11 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("login.jsp").forward(request, response);
+        String notification = request.getParameter("notification");
+        if(notification != null){
+            request.setAttribute("notification", notification);
+        }
+        request.getRequestDispatcher("./view/login.jsp").forward(request, response);
     }
 
     /**
@@ -77,15 +81,16 @@ public class LoginController extends HttpServlet {
 
         UserDAO userDAO = new UserDAO();
         Users u = userDAO.findAccount(username, password);
+        //System.out.println(u.getRole().getRoleID());
         if (u != null) {
             HttpSession session = request.getSession();
-            session.setAttribute("User", u);
-            request.setAttribute("message", "Login succesful");
+            session.setAttribute("user", u);
+            response.sendRedirect("home");
         } else {
-            request.setAttribute("message", "Login falied");
+            request.setAttribute("mess", "Login Failed");
+//            response.sendRedirect("login");
+            request.getRequestDispatcher("./view/login.jsp").forward(request, response);
         }
-        response.sendRedirect("home");
-        processRequest(request, response);
     }
 
     /**

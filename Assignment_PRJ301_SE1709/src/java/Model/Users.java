@@ -3,11 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Model;
-
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 /**
  *
  * @author anhth
  */
+@Builder
+@Getter
+@Setter
 public class Users {
     private int userID;
     private String username;
@@ -25,6 +30,25 @@ public class Users {
     public Users() {
     }
 
+    public Users(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public Users(String username, String password, String firstname, String lastname, String address, String nickname, boolean gender, String phonenumber, String email, String nationalnumber, Role role) {
+        this.username = username;
+        this.password = password;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.address = address;
+        this.nickname = nickname;
+        this.gender = gender;
+        this.phonenumber = phonenumber;
+        this.email = email;
+        this.nationalnumber = nationalnumber;
+        this.role = role;
+    }
+    
     public Users(int userID, String username, String password, String firstname, String lastname, String address, String nickname, boolean gender, String phonenumber, String email, String nationalnumber, Role role) {
         this.userID = userID;
         this.username = username;
